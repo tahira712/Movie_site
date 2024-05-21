@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="details.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="loading-icon">
+            <img src="./img/giphy.gif" alt="Loading...">
+        </div>
+       <div id="content">
+
+        <div class="container">
+            <div class="header"></div>
+
+
+
+            <div class="details"></div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+               
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper swiper-wrapper2">
+              
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+       </div>
+    </div>
+ 
+    <script src="details.js"></script> 
+       <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
